@@ -41,7 +41,7 @@ jobs:
     
     # 5. Docker Hub 이미지 푸시
     - name: docker Hub push
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/devops_step1
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/webserver1
 
   deploy:
     needs: build  # build 후에 실행되도록 정의
